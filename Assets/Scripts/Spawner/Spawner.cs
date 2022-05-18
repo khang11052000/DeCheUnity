@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public enum SpawnModes
 {
@@ -24,7 +26,14 @@ public class Spawner : MonoBehaviour
 
     private float _spawnTimer;
     private int _enemiesSpawned;
-    
+
+    private ObjectPooler _pooler;
+
+    private void Start()
+    {
+        _pooler = GetComponent<ObjectPooler>();
+    }
+
     void Update()
     {
         _spawnTimer -= Time.deltaTime;
@@ -42,7 +51,8 @@ public class Spawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        Instantiate(testGO, transform.position, Quaternion.identity);
+        GameObject newInstance = _pooler.GetInstanceFromPool();
+        newInstance.SetActive(true);
     }
 
     private float GetSpawnDelay()
