@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public static Action OnEndReached;
+    
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private WayPoint waypoint;
 
@@ -51,5 +53,16 @@ public class Enemy : MonoBehaviour
         {
             _currenWaypointIndex++;
         }
+        else
+        {
+            ReturnEnymyToPool();
+        }
     }
+
+    private void ReturnEnymyToPool()
+    {
+        OnEndReached?.Invoke();
+        ObjectPooler.ReturnToPool(gameObject);
+    }
+    
 }
