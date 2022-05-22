@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnModes: 0
-  enemyCount: 25
+  enemyCount: 1
   delayBtwWaves: 1
   delayBtwSpawns: 0.5
   minRandomDelay: 1
