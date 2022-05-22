@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
     [Header("Setting")]
     [SerializeField] private SpawnModes spawnModes = SpawnModes.Fixed;
     [SerializeField] private int enemyCount = 10;
-    [SerializeField] private GameObject testGO;
+    [SerializeField] private float delayBtwWaves = 1f;
     
     [Header("Fixed Delay")]
     [SerializeField] private float delayBtwSpawns;
@@ -26,12 +26,17 @@ public class Spawner : MonoBehaviour
 
     private float _spawnTimer;
     private int _enemiesSpawned;
+    private int _enemiesRamaining;
 
     private ObjectPooler _pooler;
+    private WayPoint _waypoint;
 
     private void Start()
     {
         _pooler = GetComponent<ObjectPooler>();
+        _waypoint = GetComponent<WayPoint>();
+
+        _enemiesRamaining = enemyCount;
     }
 
     void Update()
@@ -52,6 +57,11 @@ public class Spawner : MonoBehaviour
     private void SpawnEnemy()
     {
         GameObject newInstance = _pooler.GetInstanceFromPool();
+        Enemy enemy = newInstance.GetComponent<Enemy>();
+        enemy.Waypoint = _waypoint;
+        enemy.ResetEnemy();
+
+        enemy.transform.localPosition = transform.position;
         newInstance.SetActive(true);
     }
 
@@ -74,5 +84,32 @@ public class Spawner : MonoBehaviour
     {
         float randomTimer = Random.Range(minRandomDelay, maxRandomDelay);
         return randomTimer;
+    }
+
+    private IEnumerator NextWave()
+    {
+        yield return new WaitForSeconds(delayBtwWaves);
+        _enemiesRamaining = enemyCount;
+        _spawnTimer = 0f;
+        _enemiesSpawned = 0;
+    }
+    
+    private void RecordEnemyEndReached()
+    {
+        _enemiesRamaining--;
+        if (_enemiesRamaining <= 0)
+        {
+            StartCoroutine(NextWave());
+        }
+    }
+
+    private void OnEnable()
+    {
+        Enemy.OnEndReached += RecordEnemyEndReached;
+    }
+
+    private void OnDisable()
+    {
+        Enemy.OnEndReached -= RecordEnemyEndReached;
     }
 }
