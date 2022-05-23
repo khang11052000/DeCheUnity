@@ -14,10 +14,12 @@ public class Enemy : MonoBehaviour
     public Vector3 CurrentPointPosition => Waypoint.GetWaypointPosition(_currenWaypointIndex);
     
     private int _currenWaypointIndex;
+    private EnemyHealth _enemyHealth;
 
     private void Start()
     {
         _currenWaypointIndex = 0;
+        _enemyHealth = GetComponent<EnemyHealth>();
     }
 
     private void Update()
@@ -55,13 +57,14 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            ReturnEnymyToPool();
+            EndPointReached();
         }
     }
 
-    private void ReturnEnymyToPool()
+    private void EndPointReached()
     {
         OnEndReached?.Invoke();
+        _enemyHealth.ResetHealth();
         ObjectPooler.ReturnToPool(gameObject);
     }
 
