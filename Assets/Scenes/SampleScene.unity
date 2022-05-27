@@ -204,10 +204,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 508250678}
   - {fileID: 726383632}
   - {fileID: 254519489}
   - {fileID: 189786960}
-  - {fileID: 508250678}
   m_Father: {fileID: 1588555455}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -241,7 +241,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 302600794}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &66376175
 SpriteRenderer:
@@ -401,7 +401,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1054296110}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &116138327
 SpriteRenderer:
@@ -501,7 +501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &166229538
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -512,12 +513,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
 --- !u!1 &189786959
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +549,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 32874978}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &189786961
 SpriteRenderer:
@@ -817,7 +818,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &250622248
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -828,12 +830,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
 --- !u!1 &254519488
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +866,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 32874978}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &254519490
 SpriteRenderer:
@@ -944,7 +946,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264629067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1998, y: 1.5737305, z: 0}
+  m_LocalPosition: {x: 5.07, y: 5.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -964,7 +966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 2.53
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &264629070
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -975,12 +978,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 2.53
 --- !u!1 &291073350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,14 +1146,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302600792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.45, y: 3.83, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1014239462}
   - {fileID: 1693822544}
   - {fileID: 66376174}
   - {fileID: 379317790}
-  - {fileID: 1014239462}
   m_Father: {fileID: 264629068}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1184,7 +1187,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 302600794}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &379317791
 SpriteRenderer:
@@ -1436,7 +1439,7 @@ Transform:
   m_Children:
   - {fileID: 226712266}
   m_Father: {fileID: 32874978}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &508325677
 GameObject:
@@ -1770,7 +1773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &557358128
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1781,12 +1785,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
 --- !u!1 &567233951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,7 +1990,7 @@ Transform:
   m_Children:
   - {fileID: 520853327}
   m_Father: {fileID: 1054296110}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &606496386
 GameObject:
@@ -2270,7 +2274,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 32874978}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &726383633
 SpriteRenderer:
@@ -2619,7 +2623,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1054296110}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.15}
 --- !u!212 &986048486
 SpriteRenderer:
@@ -2871,7 +2875,7 @@ Transform:
   m_Children:
   - {fileID: 1010215708}
   m_Father: {fileID: 302600794}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1054296108
 GameObject:
@@ -2954,9 +2958,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 605409193}
   - {fileID: 116138326}
   - {fileID: 986048485}
-  - {fileID: 605409193}
   m_Father: {fileID: 1723764384}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3291,7 +3295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 3.44
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &1278716784
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3302,12 +3307,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 3.44
 --- !u!1 &1285668462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,7 +3561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &1344612746
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3567,12 +3573,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
 --- !u!1 &1392927786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3767,7 +3773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &1588555457
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3778,12 +3785,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
 --- !u!1 &1612609461
 GameObject:
   m_ObjectHideFlags: 0
@@ -4082,7 +4089,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 302600794}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1693822545
 SpriteRenderer:
@@ -4182,7 +4189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &1723764386
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4193,12 +4201,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
 --- !u!1 &1774776948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4245,7 +4253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &1774776951
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4256,12 +4265,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
 --- !u!1 &1812504083
 GameObject:
   m_ObjectHideFlags: 0
@@ -4308,7 +4317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &1812504086
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4319,12 +4329,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
 --- !u!1 &1928312707
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,7 +4413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &1992047537
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4414,12 +4425,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
 --- !u!1 &2022526901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4583,7 +4594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 1.8
+  CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &2127572862
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4594,9 +4606,9 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.8
