@@ -548,6 +548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 1740991688}
+  delayBtwAttacks: 1
 --- !u!1 &189786959
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &254519488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &291073350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,6 +1910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &567233951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829160834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.049771156, y: -0.5508749, z: -9.957549}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2524,12 +2528,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points:
   - {x: 5.2257576, y: 8.657398, z: -0.0014352798}
-  - {x: 7.7594185, y: 5.145459, z: 0.00051784515}
-  - {x: 6.6432543, y: 2.4866772, z: 0.00051784515}
-  - {x: 2.8284822, y: 2.1603777, z: 0.00051784515}
+  - {x: 7.7989545, y: 4.394247, z: 0}
+  - {x: 7.0781655, y: 2.1703773, z: 0}
+  - {x: 2.9075563, y: 1.3300905, z: 0}
   - {x: 1.6855968, y: -0.95256156, z: 0.00051784515}
-  - {x: -2.6022787, y: -0.5457255, z: 0.00051784515}
-  - {x: -2.9187543, y: 2.1950366, z: 0.00051784515}
+  - {x: -2.7208905, y: -1.3364747, z: 0}
+  - {x: -3.0769038, y: 1.7601249, z: 0}
 --- !u!1 &833745086
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,6 +3462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &1285668462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3753,6 +3758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &1392927786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,6 +4001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &1612609461
 GameObject:
   m_ObjectHideFlags: 0
@@ -4440,6 +4447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &1740991687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4464,7 +4472,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740991687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.359, y: 1.03, z: 0}
+  m_LocalPosition: {x: -0.266, y: 0.954, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4564,6 +4572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &1812504083
 GameObject:
   m_ObjectHideFlags: 0
@@ -4657,6 +4666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &1928312707
 GameObject:
   m_ObjectHideFlags: 0
@@ -4782,6 +4792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2
 --- !u!1 &2022526901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4992,3 +5003,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 0}
+  delayBtwAttacks: 2

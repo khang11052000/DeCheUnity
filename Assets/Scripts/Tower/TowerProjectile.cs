@@ -7,29 +7,38 @@ using UnityEngine;
 public class TowerProjectile : MonoBehaviour
 {
     [SerializeField] private Transform projectileSpawnPosition;
+    [SerializeField] private float delayBtwAttacks = 2f;
 
+    private float _nextAttackTime;
     private ObjectPooler _pooler;
     private Tower _tower;
     private Projectile _currentProjectileLoaded;
 
     private void Start()
     {
-        _pooler = GetComponent<ObjectPooler>();
         _tower = GetComponent<Tower>();
+        _pooler = GetComponent<ObjectPooler>();
+        
+        //LoadProjectile();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (IsTowerEmpty())
         {
             LoadProjectile();
         }
 
-        if (_tower.CurrentEnemyTarget != null && _currentProjectileLoaded != null
-        && _tower.CurrentEnemyTarget.EnemyHealth.CurrentHealth > 0f)
+        if (Time.time > _nextAttackTime)
         {
-            _currentProjectileLoaded.transform.parent = null;
-            _currentProjectileLoaded.SetEnemy(_tower.CurrentEnemyTarget);
+            if (_tower.CurrentEnemyTarget != null && _currentProjectileLoaded != null
+                                                  && _tower.CurrentEnemyTarget.EnemyHealth.CurrentHealth > 0f)
+            {
+                _currentProjectileLoaded.transform.parent = null;
+                _currentProjectileLoaded.SetEnemy(_tower.CurrentEnemyTarget);
+            }
+
+            _nextAttackTime = Time.time + delayBtwAttacks;
         }
     }
 
@@ -40,6 +49,18 @@ public class TowerProjectile : MonoBehaviour
         newInstance.transform.SetParent(projectileSpawnPosition);
 
         _currentProjectileLoaded = newInstance.GetComponent<Projectile>();
+        _currentProjectileLoaded.TowerOwner = this;
+        _currentProjectileLoaded.ResetProjectile();
         newInstance.SetActive(true);
+    }
+
+    private bool IsTowerEmpty()
+    {
+        return _currentProjectileLoaded == null;
+    }
+    
+    public void ResetTowerProjectile()
+    {
+        _currentProjectileLoaded = null;
     }
 }

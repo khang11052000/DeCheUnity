@@ -13,13 +13,13 @@ public class Tower : MonoBehaviour
     
     private bool _gameStarted;
     private List<Enemy> _enemies;
-    private SpriteRenderer[] _spriteRenderer;
+    private Transform[] _transforms;
 
     private void Start()
     {
         _gameStarted = true;
         _enemies = new List<Enemy>();
-        _spriteRenderer = GetComponentsInChildren<SpriteRenderer>();
+        _transforms = GetComponentsInChildren<Transform>();
     }
 
     private void Update()
@@ -48,11 +48,11 @@ public class Tower : MonoBehaviour
 
         if (transform.position.x > CurrentEnemyTarget.transform.position.x)
         {
-            _spriteRenderer[1].flipX = false;
+            _transforms[1].transform.localScale = new Vector3(1, 1, 1);
         }
         else
         {
-            _spriteRenderer[1].flipX = true;
+            _transforms[1].transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 
