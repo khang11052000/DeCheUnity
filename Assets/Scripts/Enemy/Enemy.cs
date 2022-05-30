@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     public float MoveSpeed { get; set; }
     public WayPoint Waypoint { get; set; }
     
+    public EnemyHealth EnemyHealth { get; set; }
+    
     // Return the current Point Position where this enemy needs to go
     public Vector3 CurrentPointPosition => Waypoint.GetWaypointPosition(_currenWaypointIndex);
     
@@ -25,6 +27,7 @@ public class Enemy : MonoBehaviour
     {
         _enemyHealth = GetComponent<EnemyHealth>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        EnemyHealth = GetComponent<EnemyHealth>();
         
         _currenWaypointIndex = 0;
         MoveSpeed = moveSpeed;

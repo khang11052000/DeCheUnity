@@ -465,6 +465,8 @@ GameObject:
   m_Component:
   - component: {fileID: 166229536}
   - component: {fileID: 166229537}
+  - component: {fileID: 166229540}
+  - component: {fileID: 166229539}
   - component: {fileID: 166229538}
   m_Layer: 0
   m_Name: Archers_2
@@ -501,7 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4dad8a1e2a9648bf39865b078f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1.8
+  attackRange: 4.67
   CurrentPos: {x: 0, y: 0, z: 0}
 --- !u!58 &166229538
 CircleCollider2D:
@@ -518,7 +520,34 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.8
+  m_Radius: 4.67
+--- !u!114 &166229539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166229535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3932991773575613922, guid: 71dcfc92686497e449ff46cb11a394ee, type: 3}
+  poolSize: 10
+--- !u!114 &166229540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166229535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 1740991688}
 --- !u!1 &189786959
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +811,8 @@ GameObject:
   m_Component:
   - component: {fileID: 250622246}
   - component: {fileID: 250622247}
+  - component: {fileID: 250622250}
+  - component: {fileID: 250622249}
   - component: {fileID: 250622248}
   m_Layer: 0
   m_Name: Dragon_4
@@ -789,7 +820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &250622246
 Transform:
   m_ObjectHideFlags: 0
@@ -836,6 +867,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8
+--- !u!114 &250622249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250622245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &250622250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250622245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
 --- !u!1 &254519488
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +988,8 @@ GameObject:
   m_Component:
   - component: {fileID: 264629068}
   - component: {fileID: 264629069}
+  - component: {fileID: 264629072}
+  - component: {fileID: 264629071}
   - component: {fileID: 264629070}
   m_Layer: 0
   m_Name: Dragon_2
@@ -937,7 +997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &264629068
 Transform:
   m_ObjectHideFlags: 0
@@ -984,6 +1044,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.53
+--- !u!114 &264629071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264629067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &264629072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264629067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
 --- !u!1 &291073350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1824,8 @@ GameObject:
   m_Component:
   - component: {fileID: 557358126}
   - component: {fileID: 557358127}
+  - component: {fileID: 557358130}
+  - component: {fileID: 557358129}
   - component: {fileID: 557358128}
   m_Layer: 0
   m_Name: Archers_3
@@ -1744,7 +1833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &557358126
 Transform:
   m_ObjectHideFlags: 0
@@ -1791,6 +1880,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8
+--- !u!114 &557358129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557358125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &557358130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557358125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
 --- !u!1 &567233951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,7 +2265,7 @@ SpriteRenderer:
   m_SortingLayerID: 1891466125
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51d83462b94c52048a325bf2c9785404, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41302c61e9f80ea4981f138bfaf17115, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3259,6 +3375,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1278716782}
   - component: {fileID: 1278716783}
+  - component: {fileID: 1278716786}
+  - component: {fileID: 1278716785}
   - component: {fileID: 1278716784}
   m_Layer: 0
   m_Name: Athlete_3
@@ -3266,7 +3384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1278716782
 Transform:
   m_ObjectHideFlags: 0
@@ -3313,6 +3431,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.44
+--- !u!114 &1278716785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278716781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &1278716786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278716781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
 --- !u!1 &1285668462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3525,6 +3670,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1344612744}
   - component: {fileID: 1344612745}
+  - component: {fileID: 1344612748}
+  - component: {fileID: 1344612747}
   - component: {fileID: 1344612746}
   m_Layer: 0
   m_Name: Archers_4
@@ -3532,7 +3679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1344612744
 Transform:
   m_ObjectHideFlags: 0
@@ -3579,6 +3726,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8
+--- !u!114 &1344612747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344612743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &1344612748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344612743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
 --- !u!1 &1392927786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3608,6 +3782,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 612616707}
+  - {fileID: 1740991688}
   m_Father: {fileID: 1207999610}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3737,6 +3912,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1588555455}
   - component: {fileID: 1588555456}
+  - component: {fileID: 1588555459}
+  - component: {fileID: 1588555458}
   - component: {fileID: 1588555457}
   m_Layer: 0
   m_Name: Dragon_3
@@ -3744,7 +3921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1588555455
 Transform:
   m_ObjectHideFlags: 0
@@ -3791,6 +3968,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8
+--- !u!114 &1588555458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588555454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &1588555459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588555454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
 --- !u!1 &1612609461
 GameObject:
   m_ObjectHideFlags: 0
@@ -4153,6 +4357,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1723764384}
   - component: {fileID: 1723764385}
+  - component: {fileID: 1723764388}
+  - component: {fileID: 1723764387}
   - component: {fileID: 1723764386}
   m_Layer: 0
   m_Name: Dragon_1
@@ -4160,7 +4366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1723764384
 Transform:
   m_ObjectHideFlags: 0
@@ -4207,6 +4413,64 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8
+--- !u!114 &1723764387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723764383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &1723764388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723764383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
+--- !u!1 &1740991687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1740991688}
+  m_Layer: 0
+  m_Name: ProjectileSpawnPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1740991688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740991687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.359, y: 1.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1392927787}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1774776948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4217,6 +4481,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1774776949}
   - component: {fileID: 1774776950}
+  - component: {fileID: 1774776953}
+  - component: {fileID: 1774776952}
   - component: {fileID: 1774776951}
   m_Layer: 0
   m_Name: Athlete_4
@@ -4224,7 +4490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1774776949
 Transform:
   m_ObjectHideFlags: 0
@@ -4271,6 +4537,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8
+--- !u!114 &1774776952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774776948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &1774776953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774776948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
 --- !u!1 &1812504083
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,6 +4574,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1812504084}
   - component: {fileID: 1812504085}
+  - component: {fileID: 1812504088}
+  - component: {fileID: 1812504087}
   - component: {fileID: 1812504086}
   m_Layer: 0
   m_Name: Athlete_2
@@ -4288,7 +4583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1812504084
 Transform:
   m_ObjectHideFlags: 0
@@ -4335,6 +4630,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8
+--- !u!114 &1812504087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812504083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &1812504088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812504083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
 --- !u!1 &1928312707
 GameObject:
   m_ObjectHideFlags: 0
@@ -4377,6 +4699,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1992047535}
   - component: {fileID: 1992047536}
+  - component: {fileID: 1992047539}
+  - component: {fileID: 1992047538}
   - component: {fileID: 1992047537}
   m_Layer: 0
   m_Name: Archers_1
@@ -4384,7 +4708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1992047535
 Transform:
   m_ObjectHideFlags: 0
@@ -4431,6 +4755,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8
+--- !u!114 &1992047538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992047534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &1992047539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992047534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
 --- !u!1 &2022526901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4558,6 +4909,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2127572860}
   - component: {fileID: 2127572861}
+  - component: {fileID: 2127572864}
+  - component: {fileID: 2127572863}
   - component: {fileID: 2127572862}
   m_Layer: 0
   m_Name: Athlete_1
@@ -4565,7 +4918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2127572860
 Transform:
   m_ObjectHideFlags: 0
@@ -4612,3 +4965,30 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8
+--- !u!114 &2127572863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127572859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03227747c96a947bd873297186eed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  poolSize: 10
+--- !u!114 &2127572864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127572859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9fe424720ca3438aa602d49cf66ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnPosition: {fileID: 0}
