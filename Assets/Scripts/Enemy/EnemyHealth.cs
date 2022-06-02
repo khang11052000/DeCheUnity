@@ -34,7 +34,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            DealDamege(5f);
+            DealDamege(5f, "kkkk");
         }
 
         _healthBar.fillAmount = Mathf.Lerp(_healthBar.fillAmount, 
@@ -50,7 +50,7 @@ public class EnemyHealth : MonoBehaviour
         _healthBar = container.FillAmountImage;
     }
 
-    public void DealDamege(float damegeReceived)
+    public void DealDamege(float damegeReceived, string myTower)
     {
         CurrentHealth -= damegeReceived;
         if (CurrentHealth <= 0)
@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
             CurrentHealth = 0;
             Die();
         }
-        else
+        else if (myTower == "AthleteProjectile")
         {
             OnEnemyHit?.Invoke(_enemy);
         }

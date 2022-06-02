@@ -6,23 +6,29 @@ using UnityEngine;
 
 public class TowerProjectile : MonoBehaviour
 {
-    [SerializeField] private Transform projectileSpawnPosition;
-    [SerializeField] private float delayBtwAttacks = 2f;
+    [SerializeField] protected Transform projectileSpawnPosition;
+    [SerializeField] protected float delayBtwAttacks = 2f;
+    [SerializeField] protected float damage = 2f;
 
-    private float _nextAttackTime;
-    private ObjectPooler _pooler;
-    private Tower _tower;
-    private Projectile _currentProjectileLoaded;
+    public float Damage { get; set; }
+    public float DelayPerShot { get; set; }
+
+    protected float _nextAttackTime;
+    protected ObjectPooler _pooler;
+    protected Tower _tower;
+    protected Projectile _currentProjectileLoaded;
 
     private void Start()
     {
         _tower = GetComponent<Tower>();
         _pooler = GetComponent<ObjectPooler>();
-        
-        //LoadProjectile();
+
+        Damage = damage;
+        DelayPerShot = delayBtwAttacks;
+        LoadProjectile();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (IsTowerEmpty())
         {
@@ -31,6 +37,7 @@ public class TowerProjectile : MonoBehaviour
 
         if (Time.time > _nextAttackTime)
         {
+
             if (_tower.CurrentEnemyTarget != null && _currentProjectileLoaded != null
                                                   && _tower.CurrentEnemyTarget.EnemyHealth.CurrentHealth > 0f)
             {
@@ -38,12 +45,13 @@ public class TowerProjectile : MonoBehaviour
                 _currentProjectileLoaded.SetEnemy(_tower.CurrentEnemyTarget);
             }
 
-            _nextAttackTime = Time.time + delayBtwAttacks;
+            _nextAttackTime = Time.time + DelayPerShot;
         }
     }
 
-    private void LoadProjectile()
+    protected virtual void LoadProjectile()
     {
+
         GameObject newInstance = _pooler.GetInstanceFromPool();
         newInstance.transform.localPosition = projectileSpawnPosition.position;
         newInstance.transform.SetParent(projectileSpawnPosition);
@@ -51,6 +59,7 @@ public class TowerProjectile : MonoBehaviour
         _currentProjectileLoaded = newInstance.GetComponent<Projectile>();
         _currentProjectileLoaded.TowerOwner = this;
         _currentProjectileLoaded.ResetProjectile();
+        _currentProjectileLoaded.Damage = Damage;
         newInstance.SetActive(true);
     }
 

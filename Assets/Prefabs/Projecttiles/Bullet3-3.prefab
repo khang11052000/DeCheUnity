@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 4462799979126764958}
   - component: {fileID: 6538371064665555592}
   - component: {fileID: 3087415393512990577}
+  - component: {fileID: -4220869249536856051}
+  - component: {fileID: 6748699751990483814}
+  - component: {fileID: 4496685822110185158}
   m_Layer: 0
   m_Name: Bullet3-3
-  m_TagString: Untagged
+  m_TagString: AthleteProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +95,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4735272567938310184}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28de648665f34954facc6969a760ff63, type: 3}
   m_Name: 
@@ -100,3 +103,55 @@ MonoBehaviour:
   moveSpeed: 10
   damage: 2
   minDistanceToDealDamage: 0.2
+--- !u!114 &-4220869249536856051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735272567938310184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e31b76e291dcd4aaa6cde40254f844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  damage: 2
+  minDistanceToDealDamage: 50
+--- !u!58 &6748699751990483814
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735272567938310184}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015643597, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.48950577
+--- !u!50 &4496685822110185158
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735272567938310184}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
