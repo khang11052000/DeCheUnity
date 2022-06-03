@@ -73,12 +73,12 @@ GameObject:
   - component: {fileID: 5144189684751106707}
   - component: {fileID: 5144189684751106704}
   - component: {fileID: 5144189684751106705}
-  - component: {fileID: -2014784889610378618}
   - component: {fileID: 5308732577780259801}
   - component: {fileID: -1764745474507819506}
+  - component: {fileID: -2014784889610378618}
+  - component: {fileID: 1491677308253416439}
   - component: {fileID: 3718997492803951966}
   - component: {fileID: 1168092014603205353}
-  - component: {fileID: 1491677308253416439}
   m_Layer: 0
   m_Name: Enemy_2
   m_TagString: Enemy
@@ -175,18 +175,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-2014784889610378618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5144189684751106710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d897686d152d54cb20b85475a9b159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5308732577780259801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,6 +204,31 @@ MonoBehaviour:
   barPosition: {fileID: 106694126146005467}
   initialHealth: 10
   maxHealth: 10
+--- !u!114 &-2014784889610378618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5144189684751106710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d897686d152d54cb20b85475a9b159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1491677308253416439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5144189684751106710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602c669dece99c64390a2938677c4678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDamageSpawnPosition: {fileID: 4324406802333159910}
 --- !u!61 &3718997492803951966
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -263,16 +276,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1491677308253416439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5144189684751106710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 602c669dece99c64390a2938677c4678, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textDamageSpawnPosition: {fileID: 4324406802333159910}

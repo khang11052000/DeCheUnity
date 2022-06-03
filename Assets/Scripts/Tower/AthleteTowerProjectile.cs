@@ -36,7 +36,7 @@ public class AthleteTowerProjectile : TowerProjectile
 
         AthleteProjectile projectile = instance.GetComponent<AthleteProjectile>();
         projectile.Direction = direction;
-        
+        projectile.Damage = Damage;
         //Co the dung cho cung 4 sao
         if (isDualAthlete)
         {
@@ -46,7 +46,7 @@ public class AthleteTowerProjectile : TowerProjectile
             Vector2 newDirection = spreadValue * direction;
             projectile.Direction = newDirection;
         }
-        
+
         instance.SetActive(true);
     }
 }

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222b5eabf8a47604d92c30069c41022a, type: 3}
+  m_Name: Dragon_tower
+  m_EditorClassIdentifier: 
+  TowerPrefab: {fileID: 5372106743948442145, guid: c3fcc1342a9d2344bb48e2b8cec2733a, type: 3}
+  TowerShopCost: 20
+  TowerShopSprite: {fileID: 21300000, guid: 8515b5b2186c889419da4edb893a2521, type: 3}
